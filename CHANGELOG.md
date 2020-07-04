@@ -1,9 +1,8 @@
 # Change Log
 
-All notable changes to the "vscode-structurizr" extension will be documented in this file.
+## [v0.0.2]
+### Changed
+- Use `dsl` file extension
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## [v0.0.1]
+- Initial release with comment, keyword, and string literal highlighting

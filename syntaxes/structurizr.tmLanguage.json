@@ -3,6 +3,9 @@
 	"name": "Structurizr",
 	"patterns": [
 		{
+			"include": "#color_hex"
+		},
+		{
 			"include": "#slash_line_comment"
 		},
 		{
@@ -16,13 +19,40 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#attributes"
+		},
+		{
+			"string_literal": {
+				"name": "string.quoted.double.structurizer",
+				"begin": "b?\"",
+				"end": "\"",
+				"patterns": [
+					{
+						"include": "#escaped_character"
+					}
+				]
+			}
+		},
+		{
+			"escaped_character": {
+				"name": "constant.character.escape.structurizer",
+				"match": "\\\\(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)"
+			}
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.structurizr",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(workspace|model|enterprise|person|softwaresystem|container|component|systemlandscape|systemcontext|views|dynamic|deployment|include|animationStep|auto|autoLayout|deploymentEnvironment|deploymentNode|containerInstance|filtered|exclude)\\b"
+			}]
+		},
+		"attributes": {
+			"patterns": [{
+				"name": "keyword.control.structurizr",
+				"match": "\\b(background|color|fontSize|shape)\\b"
 			}]
 		},
 		"strings": {
@@ -36,6 +66,10 @@
 				}
 			]
 		},
+		"color_hex": {
+			"name": "constant.numeric.decimal.structurizr",
+			"match": "#[0-9a-fA-F]{6}"
+		},
 		"slash_line_comment": {
 			"name": "comment.line.double-slash.structurizr",
 			"begin": "//",
@@ -43,13 +77,17 @@
 		},
 		"hash_line_comment": {
 			"name": "comment.line.hash.structurizr",
-			"begin": "#",
+			"begin": "^( [ \\t]+)?#",
 			"end": "$"
 		},
 		"block_comment": {
 			"name": "comment.block.structurizr",
 			"begin": "/\\*\\*",
 			"end": "\\*/"
+		},
+		"relationship": {
+			"name": "storage.type.function.arrow.structurizr",
+			"match": "->"
 		}
 	},
 	"scopeName": "source.structurizr"
