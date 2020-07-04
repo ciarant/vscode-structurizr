@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Structurizr",
+	"patterns": [
+		{
+			"include": "#slash_line_comment"
+		},
+		{
+			"include": "#hash_line_comment"
+		},
+		{
+			"include": "#block_comment"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.structurizr",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.structurizr",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.structurizr",
+					"match": "\\\\."
+				}
+			]
+		},
+		"slash_line_comment": {
+			"name": "comment.line.double-slash.structurizr",
+			"begin": "//",
+			"end": "$"
+		},
+		"hash_line_comment": {
+			"name": "comment.line.hash.structurizr",
+			"begin": "#",
+			"end": "$"
+		},
+		"block_comment": {
+			"name": "comment.block.structurizr",
+			"begin": "/\\*\\*",
+			"end": "\\*/"
+		}
+	},
+	"scopeName": "source.structurizr"
+}
