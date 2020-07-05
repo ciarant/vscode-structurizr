@@ -3,6 +3,15 @@
 	"name": "Structurizr",
 	"patterns": [
 		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#relationship"
+		},
+		{
 			"include": "#color_hex"
 		},
 		{
@@ -15,13 +24,10 @@
 			"include": "#block_comment"
 		},
 		{
-			"include": "#keywords"
-		},
-		{
 			"include": "#strings"
 		},
 		{
-			"include": "#attributes"
+			"include": "#properties"
 		},
 		{
 			"string_literal": {
@@ -46,13 +52,19 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.structurizr",
-				"match": "\\b(workspace|model|enterprise|person|softwaresystem|container|component|systemlandscape|systemcontext|views|dynamic|deployment|include|animationStep|auto|autoLayout|deploymentEnvironment|deploymentNode|containerInstance|filtered|exclude)\\b"
+				"match": "\\b(workspace|model|enterprise|views|!include)\\b"
 			}]
 		},
-		"attributes": {
+		"types": {
 			"patterns": [{
-				"name": "keyword.control.structurizr",
-				"match": "\\b(background|color|fontSize|shape)\\b"
+				"name": "support.type.structurizr",
+				"match": "\\b(person|software[s,S]ystem|deployment[e,E]nvironment|deployment[n,N]ode|infrastructure[n,N]ode|containerInstance|views|system[l,L]andscape|system[c,C]ontext|container|component|filtered|dynamic|deployment|styles|themes|branding|element)\\b"
+			}]
+		},
+		"properties": {
+			"patterns": [{
+				"name": "variable.other.property.structurizr",
+				"match": "\\b(include|exclude|auto[l,L]ayout|animation[s,S]tep|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
 			}]
 		},
 		"strings": {
@@ -86,7 +98,7 @@
 			"end": "\\*/"
 		},
 		"relationship": {
-			"name": "storage.type.function.arrow.structurizr",
+			"name": "storage.type.function.structurizr",
 			"match": "->"
 		}
 	},
