@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.0.4] - 2020-07-09
+### Fixed
+-  '!include' and 'include' highlighting [#2]
+
 ## [v0.0.3] - 2020-07-05
 ### Changed
 - Limit 'keyword.control' to workspace, model, views, and !include, use 'support.type' for other Structurizr nouns.
