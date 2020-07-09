@@ -52,7 +52,11 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.structurizr",
-				"match": "\\b(workspace|model|enterprise|views|!include)\\b"
+				"match": "\\b(workspace|model|enterprise|views)\\b"
+			},
+			{
+				"name": "keyword.control.structurizr",
+				"match": "!include\\s+"
 			}]
 		},
 		"types": {
@@ -64,7 +68,11 @@
 		"properties": {
 			"patterns": [{
 				"name": "variable.other.property.structurizr",
-				"match": "\\b(include|exclude|auto[l,L]ayout|animation[s,S]tep|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
+				"match": "\\b(exclude|auto[l,L]ayout|animation[s,S]tep|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
+			},
+			{
+				"name": "variable.other.property.structurizr",
+				"match": "^\\s*include"
 			}]
 		},
 		"strings": {
