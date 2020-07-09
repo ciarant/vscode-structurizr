@@ -1,6 +1,6 @@
 # Change Log
 
-## [v0.0.4] - 2020-07-09
+## [v0.0.5] - 2020-07-09
 ### Fixed
 -  '!include' and 'include' highlighting [#2]
 
