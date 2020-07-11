@@ -62,17 +62,13 @@
 		"types": {
 			"patterns": [{
 				"name": "support.type.structurizr",
-				"match": "\\b(person|software[s,S]ystem|deployment[e,E]nvironment|deployment[n,N]ode|infrastructure[n,N]ode|containerInstance|views|system[l,L]andscape|system[c,C]ontext|container|component|filtered|dynamic|deployment|styles|themes|branding|element)\\b"
+				"match": "\\b(person|software[s,S]ystem|deployment[e,E]nvironment|deployment[n,N]ode|infrastructure[n,N]ode|containerInstance|system[l,L]andscape|system[c,C]ontext|container|component|filtered|dynamic|deployment|styles|themes|branding|element)\\b"
 			}]
 		},
 		"properties": {
 			"patterns": [{
 				"name": "variable.other.property.structurizr",
-				"match": "\\b(exclude|auto[l,L]ayout|animation[s,S]tep|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
-			},
-			{
-				"name": "variable.other.property.structurizr",
-				"match": "^\\s*include"
+				"match": "\\b(include|exclude|auto[l,L]ayout|animation[s,S]tep|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
 			}]
 		},
 		"strings": {
