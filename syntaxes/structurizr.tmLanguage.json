@@ -56,19 +56,19 @@
 			},
 			{
 				"name": "keyword.control.structurizr",
-				"match": "!include\\s+"
+				"match": "!include\\s+|!constant\\s+|!docs\\s+|!adrs\\s+|!identifiers\\s+|!impliedRelationships\\s+|!ref\\s+|!plugin\\s+|!script\\s+\""
 			}]
 		},
 		"types": {
 			"patterns": [{
 				"name": "support.type.structurizr",
-				"match": "\\b(person|software[s,S]ystem|deployment[e,E]nvironment|deployment[n,N]ode|infrastructure[n,N]ode|containerInstance|system[l,L]andscape|system[c,C]ontext|container|component|filtered|dynamic|deployment|styles|themes|branding|element)\\b"
+				"match": "\\b(person|software[s,S]ystem|deployment[e,E]nvironment|deployment[n,N]ode|deployment[g,G]roup|infrastructure[n,N]ode|container[i,I]nstance|software[s,S]ystem[i,I]nstance|system[l,L]andscape|system[c,C]ontext|container|component|filtered|dynamic|deployment|styles|themes|branding|element|relationship|group|properties|perspectives)\\b"
 			}]
 		},
 		"properties": {
 			"patterns": [{
 				"name": "variable.other.property.structurizr",
-				"match": "\\b(include|exclude|auto[l,L]ayout|animation[s,S]tep|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
+				"match": "\\b(include|exclude|auto[l,L]ayout|tags|url|title|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
 			}]
 		},
 		"strings": {
