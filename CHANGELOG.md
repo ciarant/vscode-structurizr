@@ -1,5 +1,13 @@
 # Change Log
 
+## [v0.0.6] - 2021-11-19
+### Fixed
+- Narrow set of words that are considered to be keywords
+
+### Added
+- Types: deploymentGroup, softwareSystem, relationship, group, properties, perspectives
+- Properties: tags, url, title
+
 ## [v0.0.5] - 2020-07-09
 ### Fixed
 -  '!include' and 'include' highlighting [#2]
