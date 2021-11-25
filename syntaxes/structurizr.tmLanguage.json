@@ -98,7 +98,7 @@
 		},
 		"block_comment": {
 			"name": "comment.block.structurizr",
-			"begin": "/\\*\\*",
+			"begin": "/\\*",
 			"end": "\\*/"
 		},
 		"relationship": {
