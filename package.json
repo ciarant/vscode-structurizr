@@ -2,7 +2,7 @@
     "name": "vscode-structurizr",
     "displayName": "Structurizr",
     "description": "Structurizr DSL syntax highlighting",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "ciarant",
     "license": "MIT",
     "engines": {
@@ -13,17 +13,26 @@
     ],
     "icon": "images/icon.png",
     "contributes": {
-        "languages": [{
-            "id": "structurizr",
-            "aliases": ["Structurizr", "structurizr"],
-            "extensions": ["dsl"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "structurizr",
-            "scopeName": "source.structurizr",
-            "path": "./syntaxes/structurizr.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "structurizr",
+                "aliases": [
+                    "Structurizr",
+                    "structurizr"
+                ],
+                "extensions": [
+                    "dsl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "structurizr",
+                "scopeName": "source.structurizr",
+                "path": "./syntaxes/structurizr.tmLanguage.json"
+            }
+        ]
     },
     "bugs": "https://github.com/ciarant/vscode-structurizr/issues",
     "homepage": "https://github.com/ciarant/vscode-structurizr/blob/master/README.md",
@@ -32,6 +41,8 @@
         "url": "https://github.com/ciarant/vscode-structurizr.git"
     },
     "keywords": [
-        "structurizr", "architecture", "C4 Model"
+        "structurizr",
+        "architecture",
+        "C4 Model"
     ]
 }
