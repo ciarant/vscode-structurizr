@@ -68,7 +68,7 @@
 		"properties": {
 			"patterns": [{
 				"name": "variable.other.property.structurizr",
-				"match": "\\b(include|exclude|auto[l,L]ayout|tags|url|title|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position)\\b"
+				"match": "\\b(include|exclude|auto[l,L]ayout|tags|url|title|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position|technology)\\b"
 			}]
 		},
 		"strings": {
