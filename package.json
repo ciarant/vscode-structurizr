@@ -2,7 +2,7 @@
     "name": "vscode-structurizr",
     "displayName": "Structurizr",
     "description": "Structurizr DSL syntax highlighting",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "ciarant",
     "license": "MIT",
     "engines": {

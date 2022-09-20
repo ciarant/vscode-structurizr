@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.0.8] - 2022-09-20
+### Added
+- Properties: technology
+
 ## [v0.0.7] - 2021-11-25
 ### Fixed
 - Block comment rule
