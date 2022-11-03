@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.0.9] - 2022-11-03
+### Fixed
+- Highlightning for whole words only [#8]
+
+### Added
+- Folding regions
+
 ## [v0.0.8] - 2022-09-20
 ### Added
 - Properties: technology
