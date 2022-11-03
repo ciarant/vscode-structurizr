@@ -51,8 +51,12 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.structurizr",
-				"match": "\\b(workspace|model|enterprise|views)\\b"
+				"match": "(^|\\s+)(workspace|model|enterprise|views)\\b",
+				"captures": {
+					"2": {
+						"name": "keyword.control.structurizr"
+					}
+				}
 			},
 			{
 				"name": "keyword.control.structurizr",
@@ -61,14 +65,22 @@
 		},
 		"types": {
 			"patterns": [{
-				"name": "support.type.structurizr",
-				"match": "\\b(person|software[s,S]ystem|deployment[e,E]nvironment|deployment[n,N]ode|deployment[g,G]roup|infrastructure[n,N]ode|container[i,I]nstance|software[s,S]ystem[i,I]nstance|system[l,L]andscape|system[c,C]ontext|container|component|filtered|dynamic|deployment|styles|themes|branding|element|relationship|group|properties|perspectives)\\b"
+				"match": "(^|\\s+)(person|software[s,S]ystem|deployment[e,E]nvironment|deployment[n,N]ode|deployment[g,G]roup|infrastructure[n,N]ode|container[i,I]nstance|software[s,S]ystem[i,I]nstance|system[l,L]andscape|system[c,C]ontext|container|component|filtered|dynamic|deployment|styles|themes|branding|element|relationship|group|properties|perspectives)\\b",
+				"captures": {
+					"2": {
+						"name": "support.type.structurizr"
+					}
+				}
 			}]
 		},
 		"properties": {
 			"patterns": [{
-				"name": "variable.other.property.structurizr",
-				"match": "\\b(include|exclude|auto[l,L]ayout|tags|url|title|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position|technology)\\b"
+				"match": "(^|\\s+)(include|exclude|auto[l,L]ayout|tags|url|title|shape|icon|width|height|background|colou?r|stroke|font[s,S]ize|border|opacity|metadata|description|thickness|dashed|routing|position|technology)\\b",
+				"captures": {
+					"2": {
+						"name": "variable.other.property.structurizr"
+					}
+				}
 			}]
 		},
 		"strings": {
